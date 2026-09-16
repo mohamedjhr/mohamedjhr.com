@@ -198,8 +198,20 @@
     }
 
     @media (max-width: 900px) {
+      main {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
       .hero-headline {
-        white-space: normal;
+        white-space: nowrap;
+        font-size: clamp(28px, 10.5vw, 52px);
+      }
+    }
+
+    @media (max-width: 360px) {
+      .hero-headline {
+        font-size: 10vw;
       }
     }
   </style>
